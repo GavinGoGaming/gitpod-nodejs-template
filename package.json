@@ -3,8 +3,12 @@
   "description": "",
   "type": "commonjs",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "node index.js"
+    "start": "tsc -b && node build/index.js"
+  },
+  "types": "index.d.ts",
+  "devDependencies": {
+    "typescript": "^4.9.5"
   }
 }
